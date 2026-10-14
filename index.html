@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>النَّصْر للتحاليل الطبية</title>
+    <meta name="description"
+        content="النَّصْر للتحاليل الطبية — حجز التحاليل وسحب العينات من المنزل والاستعلام عن النتائج." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="container topbar__inner">
+            <span class="topbar__item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span dir="ltr">01044321689</span>
+            </span>
+            <span class="topbar__item topbar__item--tablet">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                </svg>
+                مواعيد العمل 11 صباحا - 9 مساءً
+            </span>
+            <span class="topbar__item topbar__item--desktop">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                </svg>
+                العنوان الزقازيق، شارع الجيش، بجوار مستشفى الزقازيق العام
+            </span>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="container navbar__inner">
+
+            <a href="index.html" class="logo" aria-label="النَّصْر للتحاليل الطبية — الرئيسية">
+                <img width="80px" height="60px" src="./image/Gemini_Generated_Image_tjhc2tjhc2tjhc2t.jpg"
+                    alt="النَّصْر للتحاليل الطبية" />
+
+            </a>
+
+            <nav id="main-nav" class="nav" aria-label="التنقل الرئيسي">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">الرئيسية</a></li>
+                    <li><a href="tests.html" class="nav__link">التحاليل الطبية</a></li>
+                    <li><a href="booking.html" class="nav__link">احجز تحليل</a></li>
+                    <li><a href="home-collection.html" class="nav__link">سحب العينات من المنزل</a></li>
+                    <li><a href="results.html" class="nav__link">استعلام عن النتائج</a></li>
+                    <li><a href="branches.html" class="nav__link">فروعنا</a></li>
+                    <li><a href="about.html" class="nav__link">من نحن</a></li>
+                </ul>
+
+                <a href="booking.html" class="btn-book btn-book--mobile">احجز تحليلك</a>
+            </nav>
+
+            <div class="navbar__actions">
+                <a href="booking.html" class="btn-book btn-book--desktop">احجز تحليل</a>
+
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false"
+                    aria-controls="main-nav" aria-label="فتح القائمة">
+                    <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                    <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== الهيرو ========== -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero__inner">
+
+                <div class="hero__content">
+                    <span class="hero__badge">تحاليل طبية · حجز أونلاين</span>
+
+                    <h1 id="hero-title" class="hero__title">
+                        <span class="hero__title-accent">اطمّن على صحتك،</span>
+                        وإحنا معاك في كل خطوة
+                    </h1>
+
+                    <p class="hero__text">
+                        في النصر للتحاليل الطبية، بنسهّل عليك متابعة صحتك من خلال مجموعة متنوعة من التحاليل،
+                        وخدمة حجز سهلة، وإمكانية طلب سحب العينات من المنزل.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="booking.html" class="btn btn--primary">احجز تحليلك</a>
+                        <a href="results.html" class="btn btn--outline">اعرف نتائج تحاليلك</a>
+                    </div>
+
+                    <ul class="hero__trust" aria-label="مميزات الخدمة">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            حجز أونلاين بسهولة
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            سحب عينات من المنزل
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            استعلام عن النتيجة
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hero__visual" aria-hidden="true">
+                    <svg viewBox="0 0 480 420" role="img" focusable="false">
+                        <!-- خلفية -->
+                        <circle cx="240" cy="210" r="190" fill="#EAF5FC" />
+                        <circle cx="240" cy="210" r="140" fill="#E8F8F6" />
+
+                        <!-- أنابيب التحاليل -->
+                        <g>
+                            <rect x="146" y="150" width="56" height="100" fill="#1769AA" />
+                            <path d="M146 80h56v170h-56z" fill="#fff" fill-opacity=".55" stroke="#1769AA"
+                                stroke-width="3" />
+                            <rect x="140" y="68" width="68" height="18" rx="7" fill="#12304A" />
+                        </g>
+                        <g>
+                            <rect x="226" y="130" width="56" height="120" fill="#16A6A1" />
+                            <path d="M226 60h56v190h-56z" fill="#fff" fill-opacity=".55" stroke="#16A6A1"
+                                stroke-width="3" />
+                            <rect x="220" y="48" width="68" height="18" rx="7" fill="#12304A" />
+                        </g>
+                        <g>
+                            <rect x="306" y="170" width="56" height="80" fill="#E5484D" fill-opacity=".85" />
+                            <path d="M306 90h56v160h-56z" fill="#fff" fill-opacity=".55" stroke="#1769AA"
+                                stroke-width="3" />
+                            <rect x="300" y="78" width="68" height="18" rx="7" fill="#12304A" />
+                        </g>
+
+                        <!-- حامل الأنابيب -->
+                        <rect x="116" y="215" width="276" height="76" rx="16" fill="#fff" stroke="#E2EAF0"
+                            stroke-width="3" />
+                        <g fill="#E2EAF0">
+                            <rect x="146" y="238" width="56" height="8" rx="4" />
+                            <rect x="226" y="238" width="56" height="8" rx="4" />
+                            <rect x="306" y="238" width="56" height="8" rx="4" />
+                        </g>
+
+                        <!-- علامة طبية -->
+                        <rect x="196" y="310" width="116" height="56" rx="14" fill="#1769AA" />
+                        <rect x="226" y="322" width="8" height="24" rx="2" fill="#fff" />
+                        <rect x="218" y="330" width="24" height="8" rx="2" fill="#fff" />
+                        <rect x="256" y="326" width="40" height="6" rx="3" fill="#fff" fill-opacity=".8" />
+                        <rect x="256" y="342" width="28" height="6" rx="3" fill="#fff" fill-opacity=".5" />
+
+                        <!-- نقطة دم -->
+                        <path d="M92 150c0 0-18 22-18 36a18 18 0 0 0 36 0c0-14-18-36-18-36Z" fill="#16A6A1" />
+                        <path d="M410 120c0 0-12 15-12 25a12 12 0 0 0 24 0c0-10-12-25-12-25Z" fill="#1769AA"
+                            fill-opacity=".85" />
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== الخدمات الرئيسية ========== -->
+        <section class="services section-padding" id="services">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">خدماتنا</span>
+                    <h2>كل اللي محتاجه لصحتك في مكان واحد</h2>
+                    <p>
+                        بنسهّل عليك الوصول لخدمات التحاليل الطبية، بداية من الحجز
+                        لحد متابعة النتائج بكل سهولة.
+                    </p>
+                </div>
+
+                <div class="services__grid">
+
+                    <!-- حجز التحاليل -->
+                    <a href="booking.html" class="service-card">
+                        <div class="service-card__icon service-card__icon--blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="16" rx="2" />
+                                <path d="M16 3v4M8 3v4M3 11h18" />
+                                <path d="m9 16 2 2 4-4" />
+                            </svg>
+                        </div>
+
+                        <h3>حجز التحاليل</h3>
+
+                        <p>
+                            اختار التحليل اللي محتاجه وحدد موعدك المناسب بسهولة.
+                        </p>
+
+                        <span class="service-card__link">
+                            احجز دلوقتي
+                            <span aria-hidden="true">←</span>
+                        </span>
+                    </a>
+
+                    <!-- النتائج -->
+                    <a href="results.html" class="service-card">
+                        <div class="service-card__icon service-card__icon--teal">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+                                <path d="M14 2v6h6M8 13h8M8 17h5" />
+                            </svg>
+                        </div>
+
+                        <h3>نتائج التحاليل</h3>
+
+                        <p>
+                            الوصول لنتائج تحاليلك من خلال خدمة استعلام مخصصة وآمنة.
+                        </p>
+
+                        <span class="service-card__link">
+                            استعلم عن نتيجتك
+                            <span aria-hidden="true">←</span>
+                        </span>
+                    </a>
+
+                    <!-- سحب العينات -->
+                    <a href="home-collection.html" class="service-card">
+                        <div class="service-card__icon service-card__icon--purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 10h18l-1 11H4L3 10Z" />
+                                <path d="M7 10V6a5 5 0 0 1 10 0v4" />
+                                <path d="M9 15h6" />
+                            </svg>
+                        </div>
+
+                        <h3>سحب العينات من المنزل</h3>
+
+                        <p>
+                            اطلب زيارة منزلية وحدد عنوانك والموعد المناسب ليك.
+                        </p>
+
+                        <span class="service-card__link">
+                            اطلب الخدمة
+                            <span aria-hidden="true">←</span>
+                        </span>
+                    </a>
+
+                    <!-- الفروع -->
+                    <a href="branches.html" class="service-card">
+                        <div class="service-card__icon service-card__icon--orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+                                <circle cx="12" cy="10" r="2.5" />
+                            </svg>
+                        </div>
+
+                        <h3>فروعنا</h3>
+
+                        <p>
+                            اعرف عناوين الفروع ومعلومات التواصل ومواعيد العمل.
+                        </p>
+
+                        <span class="service-card__link">
+                            اكتشف الفروع
+                            <span aria-hidden="true">←</span>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== التحاليل الشائعة ========== -->
+        <section class="tests section-padding" id="tests">
+            <div class="container">
+
+                <div class="section-heading section-heading--row">
+                    <div>
+                        <span class="section-label">دليل التحاليل</span>
+
+                        <h2>تحاليل تهمك</h2>
+
+                        <p>
+                            تعرّف على مجموعة من التحاليل الشائعة واختار التحليل
+                            اللي محتاج تعرف تفاصيله.
+                        </p>
+                    </div>
+
+                    <a href="tests.html" class="text-link">
+                        عرض كل التحاليل
+                        <span aria-hidden="true">←</span>
+                    </a>
+                </div>
+
+                <div class="tests__grid">
+
+                    <!-- CBC -->
+                    <article class="test-card">
+                        <div class="test-card__top">
+                            <div class="test-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 3s-7 8-7 12a7 7 0 0 0 14 0c0-4-7-12-7-12Z" />
+                                    <path d="M9 15h6M12 12v6" />
+                                </svg>
+                            </div>
+
+                            <span class="test-card__category">تحاليل الدم</span>
+                        </div>
+
+                        <h3>صورة دم كاملة</h3>
+                        <span class="test-card__english">Complete Blood Count (CBC)</span>
+
+                        <p>
+                            تحليل بيقيس مكونات الدم الرئيسية، زي كرات الدم الحمراء
+                            والبيضاء والصفائح الدموية.
+                        </p>
+
+                        <a href="booking.html" class="test-card__button">
+                            احجز التحليل
+                            <span aria-hidden="true">←</span>
+                        </a>
+                    </article>
+
+                    <!-- HbA1c -->
+                    <article class="test-card">
+                        <div class="test-card__top">
+                            <div class="test-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="4" width="18" height="17" rx="2" />
+                                    <path d="M8 2v4M16 2v4M3 9h18" />
+                                    <path d="M7 14h3M7 17h7" />
+                                </svg>
+                            </div>
+
+                            <span class="test-card__category">السكر والغدد</span>
+                        </div>
+
+                        <h3>السكر التراكمي</h3>
+                        <span class="test-card__english">HbA1c</span>
+
+                        <p>
+                            بيساعد في تقييم متوسط مستوى السكر في الدم خلال
+                            الشهرين إلى الثلاثة أشهر السابقة.
+                        </p>
+
+                        <a href="booking.html" class="test-card__button">
+                            احجز التحليل
+                            <span aria-hidden="true">←</span>
+                        </a>
+                    </article>
+
+                    <!-- Liver -->
+                    <article class="test-card">
+                        <div class="test-card__top">
+                            <div class="test-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4 13c0-5 3-8 8-8s8 3 8 8c0 4-3 7-8 7s-8-3-8-7Z" />
+                                    <path d="M12 5v7l6 2" />
+                                </svg>
+                            </div>
+
+                            <span class="test-card__category">وظائف الأعضاء</span>
+                        </div>
+
+                        <h3>وظائف الكبد</h3>
+                        <span class="test-card__english">Liver Function Tests</span>
+
+                        <p>
+                            مجموعة من التحاليل اللي بتساعد الطبيب في تقييم
+                            وظائف الكبد وفقًا للنتائج.
+                        </p>
+
+                        <a href="booking.html" class="test-card__button">
+                            احجز التحليل
+                            <span aria-hidden="true">←</span>
+                        </a>
+                    </article>
+
+                    <!-- Kidney -->
+                    <article class="test-card">
+                        <div class="test-card__top">
+                            <div class="test-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M8 4C4 4 3 8 4 12s4 7 7 5V8c0-2-1-4-3-4Z" />
+                                    <path d="M16 4c4 0 5 4 4 8s-4 7-7 5V8c0-2 1-4 3-4Z" />
+                                    <path d="M12 8v12" />
+                                </svg>
+                            </div>
+
+                            <span class="test-card__category">وظائف الأعضاء</span>
+                        </div>
+
+                        <h3>وظائف الكلى</h3>
+                        <span class="test-card__english">Kidney Function Tests</span>
+
+                        <p>
+                            بتساعد تحاليل وظائف الكلى في تقييم أدائها
+                            حسب المؤشرات اللي بيحددها الطبيب.
+                        </p>
+
+                        <a href="booking.html" class="test-card__button">
+                            احجز التحليل
+                            <span aria-hidden="true">←</span>
+                        </a>
+                    </article>
+
+                    <!-- TSH -->
+                    <article class="test-card">
+                        <div class="test-card__top">
+                            <div class="test-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M12 7v5l3 2" />
+                                </svg>
+                            </div>
+
+                            <span class="test-card__category">الهرمونات</span>
+                        </div>
+
+                        <h3>تحليل الغدة الدرقية</h3>
+                        <span class="test-card__english">Thyroid Stimulating Hormone (TSH)</span>
+
+                        <p>
+                            تحليل بيساعد في تقييم وظيفة الغدة الدرقية
+                            بالتعاون مع الفحوصات الأخرى عند الحاجة.
+                        </p>
+
+                        <a href="booking.html" class="test-card__button">
+                            احجز التحليل
+                            <span aria-hidden="true">←</span>
+                        </a>
+                    </article>
+
+                    <!-- Lipid -->
+                    <article class="test-card">
+                        <div class="test-card__top">
+                            <div class="test-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M3 18h18M5 14l4-4 4 3 6-7" />
+                                    <path d="M15 6h4v4" />
+                                </svg>
+                            </div>
+
+                            <span class="test-card__category">الدهون</span>
+                        </div>
+
+                        <h3>تحليل الدهون</h3>
+                        <span class="test-card__english">Lipid Profile</span>
+
+                        <p>
+                            بيقيس أنواعًا مختلفة من الدهون في الدم،
+                            وبيساعد الطبيب في تقييم عوامل الخطورة القلبية.
+                        </p>
+
+                        <a href="booking.html" class="test-card__button">
+                            احجز التحليل
+                            <span aria-hidden="true">←</span>
+                        </a>
+                    </article>
+
+                </div>
+
+                <div class="tests__note">
+                    <span class="tests__note-icon" aria-hidden="true">i</span>
+
+                    <p>
+                        المعلومات المعروضة للتعريف بالتحاليل فقط.
+                        الطبيب هو اللي بيحدد التحاليل المناسبة لحالتك،
+                        والمعمل بيأكد لك تعليمات التحضير قبل إجراء كل تحليل.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========== سحب العينات من المنزل ========== -->
+        <section class="home-collection section-padding" id="home-collection">
+            <div class="container">
+
+                <div class="home-collection__inner">
+
+                    <div class="home-collection__content">
+                        <span class="section-label section-label--light">
+                            راحتك تهمنا
+                        </span>
+
+                        <h2>تحليلك لحد باب البيت</h2>
+
+                        <p>
+                            لو مش مناسب ليك تروح الفرع، تقدر تبعت طلب لسحب
+                            العينة من المنزل، وتحدد عنوانك والموعد المفضل ليك،
+                            حسب المناطق والمواعيد المتاحة.
+                        </p>
+
+                        <a href="home-collection.html" class="btn btn--white">
+                            اطلب سحب عينة من المنزل
+                            <span aria-hidden="true">←</span>
+                        </a>
+
+                        <div class="home-collection__features">
+                            <div>
+                                <span class="feature-number">01</span>
+                                <span>حدد بياناتك</span>
+                            </div>
+
+                            <div>
+                                <span class="feature-number">02</span>
+                                <span>اختار الموعد</span>
+                            </div>
+
+                            <div>
+                                <span class="feature-number">03</span>
+                                <span>أكد تفاصيل الطلب</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-collection__visual" aria-hidden="true">
+                        <div class="collection-circle collection-circle--outer"></div>
+                        <div class="collection-circle collection-circle--inner"></div>
+
+                        <div class="collection-card collection-card--main">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="7" width="18" height="14" rx="2" />
+                                <path d="M8 7V5a4 4 0 0 1 8 0v2" />
+                                <path d="M12 11v6M9 14h6" />
+                            </svg>
+
+                            <span>خدمة سحب العينات</span>
+                            <strong>من المنزل</strong>
+                        </div>
+
+                        <div class="collection-card collection-card--small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+                                <circle cx="12" cy="10" r="2.5" />
+                            </svg>
+
+                            <span>المكان المناسب ليك</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== لماذا النصر؟ ========== -->
+        <section class="why-us section-padding" id="why-us">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">ليه تختارنا؟</span>
+
+                    <h2>تجربة أسهل لمتابعة صحتك</h2>
+
+                    <p>
+                        بنهتم إنك تلاقي المعلومات والخدمات اللي محتاجها
+                        بشكل واضح ومنظم.
+                    </p>
+                </div>
+
+                <div class="why-us__grid">
+
+                    <article class="why-card">
+                        <div class="why-card__number">01</div>
+
+                        <h3>حجز أسهل</h3>
+
+                        <p>
+                            اختار التحليل وسجّل بيانات الحجز من خلال خطوات واضحة.
+                        </p>
+                    </article>
+
+                    <article class="why-card">
+                        <div class="why-card__number">02</div>
+
+                        <h3>خدمات متنوعة</h3>
+
+                        <p>
+                            اتعرف على التحاليل المتاحة وخدمات المعمل من مكان واحد.
+                        </p>
+                    </article>
+
+                    <article class="why-card">
+                        <div class="why-card__number">03</div>
+
+                        <h3>خيارات مريحة</h3>
+
+                        <p>
+                            استكشف إمكانية سحب العينات من المنزل حسب التوافر.
+                        </p>
+                    </article>
+
+                    <article class="why-card">
+                        <div class="why-card__number">04</div>
+
+                        <h3>معلومات واضحة</h3>
+
+                        <p>
+                            اعرف تفاصيل الخدمات وطرق التواصل قبل ما تبدأ طلبك.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== خطوات الحجز ========== -->
+        <section class="booking-steps section-padding" id="booking-steps">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">خطوات بسيطة</span>
+
+                    <h2>احجز تحليلك في 3 خطوات</h2>
+
+                    <p>
+                        ابدأ من اختيار التحليل لحد تحديد طريقة إجراء الخدمة.
+                    </p>
+                </div>
+
+                <div class="steps__grid">
+
+                    <article class="step-card">
+                        <div class="step-card__number">1</div>
+                        <h3>اختار التحليل</h3>
+                        <p>
+                            تصفح قائمة التحاليل واختار التحليل اللي محتاج تستفسر عنه.
+                        </p>
+                    </article>
+
+                    <div class="step-connector" aria-hidden="true"></div>
+
+                    <article class="step-card">
+                        <div class="step-card__number">2</div>
+                        <h3>سجّل بياناتك</h3>
+                        <p>
+                            اكتب بيانات التواصل وحدد الفرع أو طلب سحب العينة من المنزل.
+                        </p>
+                    </article>
+
+                    <div class="step-connector" aria-hidden="true"></div>
+
+                    <article class="step-card">
+                        <div class="step-card__number">3</div>
+                        <h3>تابع طلبك</h3>
+                        <p>
+                            راجع تفاصيل الطلب وتابع التأكيد من خلال وسيلة التواصل المتاحة.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="steps__action">
+                    <a href="booking.html" class="btn btn--primary">
+                        ابدأ الحجز دلوقتي
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========== الأسئلة الشائعة ========== -->
+        <section class="faq section-padding" id="faq">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">محتاج تعرف إيه؟</span>
+
+                    <h2>الأسئلة الشائعة</h2>
+
+                    <p>
+                        إجابات مختصرة عن أهم الأسئلة المتعلقة بخدمات المعمل.
+                    </p>
+                </div>
+
+                <div class="faq__list">
+
+                    <details class="faq-item">
+                        <summary>إزاي أحجز تحليل؟</summary>
+
+                        <p>
+                            ادخل على صفحة حجز التحاليل، وسجّل بيانات التواصل
+                            واختار التحليل والفرع أو طريقة الخدمة المناسبة.
+                            تفاصيل تأكيد الحجز بتعتمد على نظام المعمل المتاح.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>هل ممكن أسحب العينة من البيت؟</summary>
+
+                        <p>
+                            تقدر تقدم طلب لسحب العينة من المنزل، مع تحديد
+                            عنوانك والموعد المفضل. تأكيد الخدمة بيتوقف على
+                            المنطقة والمواعيد المتاحة.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>إزاي أستعلم عن نتيجة التحليل؟</summary>
+
+                        <p>
+                            استخدم صفحة الاستعلام عن النتائج واتبع خطوات التحقق
+                            المعتمدة لدى المعمل. لازم تكون خدمة النتائج مرتبطة
+                            بنظام آمن للتحقق من هوية صاحب النتيجة.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>هل كل التحاليل محتاجة صيام؟</summary>
+
+                        <p>
+                            لأ، تعليمات التحضير بتختلف من تحليل للتاني.
+                            اسأل المعمل أو الطبيب عن التعليمات الخاصة بالتحليل
+                            قبل موعده.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>إزاي أعرف أقرب فرع ليا؟</summary>
+
+                        <p>
+                            ادخل على صفحة الفروع للاطلاع على العناوين
+                            وبيانات التواصل المتاحة.
+                        </p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== الدعوة النهائية للحجز ========== -->
+        <section class="final-cta">
+            <div class="container">
+
+                <div class="final-cta__inner">
+
+                    <div>
+                        <span class="final-cta__label">النصر للتحاليل الطبية</span>
+
+                        <h2>ابدأ بخطوة بسيطة للاهتمام بصحتك</h2>
+
+                        <p>
+                            اتعرف على التحاليل المتاحة أو ابدأ طلب الحجز
+                            من خلال الموقع.
+                        </p>
+                    </div>
+
+                    <div class="final-cta__actions">
+                        <a href="booking.html" class="btn btn--white">
+                            احجز تحليلك
+                        </a>
+
+                        <a href="tests.html" class="btn btn--cta-outline">
+                            استعرض التحاليل
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== الفوتر ========== -->
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer__grid">
+
+                    <div class="footer__brand">
+                        <a href="index.html" class="logo footer__logo">
+                            <!-- <img src="./image/Screenshot 2026-10-13 164047.png" width="100px" alt="النصر للتحاليل الطبية"> -->
+
+                            <span class="logo__text">
+                                <span class="logo__name">النَّصْر</span>
+                                <span class="logo__tagline">للتحاليل الطبية</span>
+                            </span>
+                        </a>
+
+                        <p>
+                            منصة إلكترونية للتعريف بخدمات التحاليل الطبية،
+                            وتسهيل الوصول لمعلومات الحجز والفروع والخدمات المتاحة.
+                        </p>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3>روابط مهمة</h3>
+
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="tests.html">التحاليل الطبية</a></li>
+                            <li><a href="booking.html">احجز تحليل</a></li>
+                            <li><a href="branches.html">فروعنا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3>خدماتنا</h3>
+
+                        <ul>
+                            <li>
+                                <a href="home-collection.html">
+                                    سحب العينات من المنزل
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="results.html">
+                                    استعلام عن النتائج
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">
+                                    من نحن
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#faq">
+                                    الأسئلة الشائعة
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column footer__contact">
+                        <h3>تواصل معانا</h3>
+
+                        <p>رقم الهاتف: يُضاف بعد تأكيد البيانات.</p>
+                        <p>العنوان: يُضاف بعد تأكيد بيانات الفروع.</p>
+                        <p>مواعيد العمل: تُحدد لاحقًا.</p>
+                    </div>
+
+                </div>
+
+                <div class="footer__bottom">
+                    <p>
+                        © <span dir="ltr">2026</span> النصر للتحاليل الطبية.
+                        جميع الحقوق محفوظة.
+                    </p>
+
+                    <a href="about.html">عن المعمل</a>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
