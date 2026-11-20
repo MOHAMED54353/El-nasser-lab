@@ -376,17 +376,6 @@ a {
     padding-block: 2.5rem 3rem;
 }
 
-.hero__badge {
-    display: inline-block;
-    margin-bottom: 1rem;
-    padding: 0.3rem 0.9rem;
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--color-teal);
-    background: var(--color-teal-light, #e8f8f6);
-    border-radius: 999px;
-}
-
 .hero__title {
     margin: 0 0 1rem;
     font-size: clamp(1.85rem, 1.2rem + 3vw, 3rem);

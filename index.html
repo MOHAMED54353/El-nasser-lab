@@ -49,9 +49,8 @@
         <div class="container navbar__inner">
 
             <a href="index.html" class="logo" aria-label="النَّصْر للتحاليل الطبية — الرئيسية">
-                <img width="80px" height="60px" src="./image/Gemini_Generated_Image_tjhc2tjhc2tjhc2t.jpg"
+                <img width="80" height="60" src="./image/Gemini_Generated_Image_tjhc2tjhc2tjhc2t.jpg"
                     alt="النَّصْر للتحاليل الطبية" />
-
             </a>
 
             <nav id="main-nav" class="nav" aria-label="التنقل الرئيسي">
@@ -97,8 +96,6 @@
             <div class="container hero__inner">
 
                 <div class="hero__content">
-                    <span class="hero__badge">تحاليل طبية · حجز أونلاين</span>
-
                     <h1 id="hero-title" class="hero__title">
                         <span class="hero__title-accent">اطمّن على صحتك،</span>
                         وإحنا معاك في كل خطوة
@@ -252,7 +249,7 @@
                     </a>
 
                     <!-- سحب العينات -->
-                    <a href="home-collection.html" class="service-card">
+                    <a href="booking.html" class="service-card">
                         <div class="service-card__icon service-card__icon--purple">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -347,7 +344,7 @@
                             والبيضاء والصفائح الدموية.
                         </p>
 
-                        <a href="booking.html" class="test-card__button">
+                        <a href="booking.html?test=cbc" class="test-card__button">
                             احجز التحليل
                             <span aria-hidden="true">←</span>
                         </a>
@@ -376,7 +373,7 @@
                             الشهرين إلى الثلاثة أشهر السابقة.
                         </p>
 
-                        <a href="booking.html" class="test-card__button">
+                        <a href="booking.html?test=hba1c" class="test-card__button">
                             احجز التحليل
                             <span aria-hidden="true">←</span>
                         </a>
@@ -404,7 +401,7 @@
                             وظائف الكبد وفقًا للنتائج.
                         </p>
 
-                        <a href="booking.html" class="test-card__button">
+                        <a href="booking.html?test=liver" class="test-card__button">
                             احجز التحليل
                             <span aria-hidden="true">←</span>
                         </a>
@@ -433,7 +430,7 @@
                             حسب المؤشرات اللي بيحددها الطبيب.
                         </p>
 
-                        <a href="booking.html" class="test-card__button">
+                        <a href="booking.html?test=kidney" class="test-card__button">
                             احجز التحليل
                             <span aria-hidden="true">←</span>
                         </a>
@@ -461,7 +458,7 @@
                             بالتعاون مع الفحوصات الأخرى عند الحاجة.
                         </p>
 
-                        <a href="booking.html" class="test-card__button">
+                        <a href="booking.html?test=tsh" class="test-card__button">
                             احجز التحليل
                             <span aria-hidden="true">←</span>
                         </a>
@@ -489,7 +486,7 @@
                             وبيساعد الطبيب في تقييم عوامل الخطورة القلبية.
                         </p>
 
-                        <a href="booking.html" class="test-card__button">
+                        <a href="booking.html?test=lipid" class="test-card__button">
                             احجز التحليل
                             <span aria-hidden="true">←</span>
                         </a>
@@ -530,7 +527,7 @@
                             حسب المناطق والمواعيد المتاحة.
                         </p>
 
-                        <a href="home-collection.html" class="btn btn--white">
+                        <a href="booking.html" class="btn btn--white">
                             اطلب سحب عينة من المنزل
                             <span aria-hidden="true">←</span>
                         </a>
@@ -685,9 +682,9 @@
 
                     <article class="step-card">
                         <div class="step-card__number">3</div>
-                        <h3>تابع طلبك</h3>
+                        <h3>ابعت الطلب</h3>
                         <p>
-                            راجع تفاصيل الطلب وتابع التأكيد من خلال وسيلة التواصل المتاحة.
+                            الطلب بيوصل للمعمل على الواتساب، وبيأكد معاك الموعد.
                         </p>
                     </article>
 
@@ -723,9 +720,9 @@
                         <summary>إزاي أحجز تحليل؟</summary>
 
                         <p>
-                            ادخل على صفحة حجز التحاليل، وسجّل بيانات التواصل
-                            واختار التحليل والفرع أو طريقة الخدمة المناسبة.
-                            تفاصيل تأكيد الحجز بتعتمد على نظام المعمل المتاح.
+                            ادخل على صفحة حجز التحاليل، واكتب بياناتك واختار التحليل
+                            والموعد وطريقة الخدمة (الفرع أو من البيت). هتبعت الطلب
+                            على واتساب المعمل، والمعمل بيرد عليك ويأكد الموعد.
                         </p>
                     </details>
 
@@ -813,8 +810,6 @@
 
                     <div class="footer__brand">
                         <a href="index.html" class="logo footer__logo">
-                            <!-- <img src="./image/Screenshot 2026-10-13 164047.png" width="100px" alt="النصر للتحاليل الطبية"> -->
-
                             <span class="logo__text">
                                 <span class="logo__name">النَّصْر</span>
                                 <span class="logo__tagline">للتحاليل الطبية</span>
@@ -843,7 +838,7 @@
 
                         <ul>
                             <li>
-                                <a href="home-collection.html">
+                                <a href="booking.html">
                                     سحب العينات من المنزل
                                 </a>
                             </li>
@@ -871,9 +866,9 @@
                     <div class="footer__column footer__contact">
                         <h3>تواصل معانا</h3>
 
-                        <p>رقم الهاتف: يُضاف بعد تأكيد البيانات.</p>
-                        <p>العنوان: يُضاف بعد تأكيد بيانات الفروع.</p>
-                        <p>مواعيد العمل: تُحدد لاحقًا.</p>
+                        <p>رقم الهاتف: <span dir="ltr">01044321689</span></p>
+                        <p>العنوان: الزقازيق، شارع الجيش، بجوار مستشفى الزقازيق العام</p>
+                        <p>مواعيد العمل: 11 صباحًا - 9 مساءً</p>
                     </div>
 
                 </div>

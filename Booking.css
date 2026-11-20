@@ -1,0 +1,373 @@
+/* =========================================
+   Booking Page
+   (بيتحمل بعد Style.css)
+========================================= */
+
+.booking-page {
+    background: var(--color-bg);
+}
+
+.booking-form {
+    max-width: 760px;
+    margin-inline: auto;
+    padding: 28px 22px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+}
+
+.form-block {
+    margin: 0 0 26px;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+}
+
+.form-block legend {
+    margin-bottom: 14px;
+    padding: 0;
+    color: var(--color-navy);
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.form-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.field--spaced {
+    margin-top: 16px;
+}
+
+.field label {
+    color: var(--color-navy);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 14px;
+    color: var(--color-text);
+    background: var(--color-white);
+    border: 1.5px solid var(--color-border);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field textarea {
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.15);
+}
+
+.field [aria-invalid="true"] {
+    border-color: #e5484d;
+}
+
+.field__error {
+    color: #c93338;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.field__error:empty {
+    display: none;
+}
+
+.field__note {
+    margin: 10px 0 0;
+    color: #687987;
+    font-size: 0.84rem;
+}
+
+/* =========================================
+   اختيار التحاليل
+========================================= */
+
+.tests-picker {
+    border: 1.5px solid var(--color-border);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--color-white);
+}
+
+.tests-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.tests-search svg {
+    position: absolute;
+    inset-inline-start: 14px;
+    color: #82909c;
+    pointer-events: none;
+}
+
+.tests-search input {
+    width: 100%;
+    min-height: 52px;
+    padding: 10px 14px;
+    padding-inline-start: 42px;
+    color: var(--color-text);
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.tests-search input:focus {
+    outline: none;
+    background: var(--color-blue-light);
+}
+
+.tests-list {
+    max-height: 340px;
+    padding: 6px 14px 14px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.test-group__title {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 12px 0 8px;
+    color: var(--color-teal);
+    background: var(--color-white);
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.checks {
+    display: grid;
+    gap: 8px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    background: var(--color-white);
+    border: 1.5px solid var(--color-border);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.check:hover {
+    border-color: #b8d8ee;
+}
+
+.check small {
+    color: #82909c;
+    font-weight: 400;
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+.check input {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    accent-color: var(--color-primary);
+}
+
+.check:has(input:checked) {
+    background: var(--color-blue-light);
+    border-color: var(--color-primary);
+}
+
+.tests-empty {
+    margin: 18px 0 6px;
+    text-align: center;
+    color: #687987;
+    font-size: 0.92rem;
+}
+
+.tests-selected {
+    padding: 12px 14px 14px;
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+}
+
+.tests-selected__title {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-navy);
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px 6px 12px;
+    color: var(--color-white);
+    background: var(--color-primary);
+    border: 0;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.chip:hover {
+    background: var(--color-primary-dark);
+}
+
+.chip__x {
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+/* ---- طريقة الخدمة (radios) ---- */
+.radios {
+    display: grid;
+    gap: 12px;
+}
+
+.radio {
+    display: block;
+    cursor: pointer;
+}
+
+.radio input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.radio__box {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 14px 16px;
+    background: var(--color-white);
+    border: 1.5px solid var(--color-border);
+    border-radius: 12px;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.radio__box strong {
+    color: var(--color-navy);
+    font-size: 1rem;
+}
+
+.radio__box small {
+    color: #687987;
+    font-size: 0.82rem;
+}
+
+.radio input:checked+.radio__box {
+    background: var(--color-blue-light);
+    border-color: var(--color-primary);
+}
+
+.radio input:focus-visible+.radio__box {
+    outline: 3px solid var(--color-teal);
+    outline-offset: 2px;
+}
+
+/* ---- زرار الواتساب ---- */
+.btn--whatsapp {
+    width: 100%;
+    gap: 10px;
+    color: #fff;
+    background: #1fa855;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn--whatsapp:hover {
+    background: #178a45;
+}
+
+.form-hint {
+    margin: 14px 0 0;
+    text-align: center;
+    color: #687987;
+    font-size: 0.86rem;
+}
+
+.form-status {
+    margin-top: 18px;
+    padding: 14px 16px;
+    color: #0f6b66;
+    background: var(--color-teal-light);
+    border: 1px solid #bfe9e5;
+    border-radius: 12px;
+    font-size: 0.92rem;
+    line-height: 1.9;
+}
+
+.form-status a {
+    color: var(--color-primary);
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (min-width: 640px) {
+    .booking-form {
+        padding: 38px 36px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .checks {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .radios {
+        grid-template-columns: 1fr 1fr;
+    }
+}
